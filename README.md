@@ -16,7 +16,8 @@ python metricAL.py
 - `s` is **RW** sequence, a string, in format of `0 0 0 1 1 0 1 0 1`, or `R R R W W R W R W`, flexible on blank/comma  
 - `add_eos` is used to add eos token for both src and tgt if you did not do it during RW generating (to add tail `0` and `1` into the RW sequence)  
 - output is a single value as `AL`  
-1. `RW2AL_file(file_rw, is_weight_ave=False)` 
+
+2. `RW2AL_file(file_rw, is_weight_ave=False)` 
 - get `AL` value from a file with **RW** sequences  
 - `file_rw` is the path to a **RW** sequence file  
 - `is_weight_ave` is used to return weighted average result against READ length or mean result on corpus  
