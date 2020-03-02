@@ -61,7 +61,7 @@ def RW2AL_file(file_rw, is_weight_ave=False):
             ALs.append(rw)
             Lsrc.append(line.count('0'))
     
-    AL = np.average(ALs) if is_weight_ave else np.average(ALs, weights=Lsrc)
+    AL = np.average(ALs, weights=Lsrc) if is_weight_ave else np.average(ALs)
     return AL
 
 
